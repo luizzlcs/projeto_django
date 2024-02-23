@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ),
                 ("titulo", models.CharField(max_length=100)),
                 ("thumb", models.ImageField(upload_to="thumbs_filmes")),
-                ("desricao", models.TextField(max_length=1000)),
+                ("descricao", models.TextField(max_length=1000)),
                 (
                     "categoria",
                     models.CharField(
