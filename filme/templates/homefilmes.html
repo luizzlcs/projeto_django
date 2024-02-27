@@ -9,7 +9,7 @@ Home filmes HashFlix
     {% for filme in object_list %}
     <hr>
         <a href="{% url 'filme:detalhesfilme' filme.pk %}"><p>{{ filme.titulo }}</p></a>
-        {{ filme.desricao}}
+        {{ filme.descricao}}
         <img src="{{filme.thumb.url}}">
     {% endfor %}
 </div>
