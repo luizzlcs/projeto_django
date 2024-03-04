@@ -9,5 +9,14 @@ Home filmes HashFlix
     <a href=""><p>{{ object.titulo}}</p></a>
     <p>{{object.descricao}}</p>
     <img src = "{{ object.thumb.url }}"/>
+
+    <h2>Episódios</h2>
+    {%for episodios in object.episodios.all%}
+        <a href="{{ episodios.video }}">
+            <p>Episódio {{ forloop.counter }}: {{ episodios.titulo }}</p>
+        </a>
+        
+    {%endfor%}
+    
 </div>
 {% endblock %}
